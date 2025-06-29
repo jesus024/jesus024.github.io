@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Esenciales -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta name="description" content="Modern CRUD App to manage products with dynamic UI and interactive features. Created by Jesus A.">
+    <meta name="keywords" content="CRUD, JavaScript, Product Manager, UI, Interactive Form, Jesus A, HTML CSS JS CRUD, Modern UI, Product Inventory">
+    <meta name="author" content="https://github.com/jesus024">
+    <meta name="author" content="Jesus A.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (para compartir en redes sociales) -->
+    <meta property="og:title" content="Modern Product CRUD App">
+    <meta property="og:description" content="Easily manage your products with a sleek and interactive CRUD application.">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Modern Product CRUD App">
+    <meta name="twitter:description" content="Manage your product inventory with a beautiful CRUD UI built with HTML, CSS, and JavaScript.">
+
+    <!-- Tipografía y estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="me" href="https://jesus024.github.io/">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Modern Product CRUD by Jesus A</title>
+</head>
+>
+
+<body>
+    <header class="navbar">
+        <h1>CRUD Jesus A</h1>
+    </header>
+    <main>
+        <section class="container-form">
+            <div class="myForm">
+                <form action="" class="Form-product">
+                    <input type="text" placeholder=" Product name" id="name-product" name="name-product" required>
+                    <input type="number" placeholder=" Quantity" id="quantity-product" name="quantity-product" required>
+                    <input type="number" placeholder=" Price per unit" id="price-product" name="price-product" required>
+                    <div class="container-btns">
+                        <button type="submit" id="btn-save"> Save Product</button>
+                        <button type="reset" id="btn-clean"> Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="container-table">
+            <div class="table-form">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> ID</th>
+                            <th> Product</th>
+                            <th> Price-Unit</th>
+                            <th> Quantity</th>
+                            <th> Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="container_master">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Jesus A. All rights reserved.</p>
+    </footer>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
